@@ -67,7 +67,7 @@ body{
 
 .main{
     width: 100%;
-    height: 65vh;
+    height: 70vh;
     margin-top: 10vh;
 
     display: flex;
@@ -162,10 +162,11 @@ body{
 
 .footer{
     width: 100%;
-    height: 10vh;
     background-color: #f2f2f2;
     border-top: 1px solid #e4e4e4;
+
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-size: 1.4rem;
@@ -173,30 +174,88 @@ body{
 
 .footer_left-section{
     display: flex;
-    width: 100%;
     padding-left: 2vw;
 }
 
 .footer_right-section{
-    width: 100%;
     display: flex;
     justify-content: flex-end
 }
 
 .footer_link{
+    padding: calc(2.5vh - 0.7rem) 0;
     text-decoration: none;
     color: #5f6368;
     margin-right: 2vw;
+    white-space: nowrap;
 }
 
 .footer_link:hover{
     text-decoration: underline;
 }
 
+@media(max-width:750px){
+    .footer{
+        flex-direction: column;
+    }
+}
 
+@media(max-width:600px){
+    .main_search-container{
+        width: calc(550px * 0.8);
+    }
+    .main_search-container-input{
+        width: calc(500px * 0.8);
+    }
+    .main_logo{
+        width: calc(272px * 0.8);
+        height: calc(92px * 0.8);
+    }
+}
 
+@media(max-width:450px){
+    .main_search-container{
+        width: calc(550px * 0.6);
+    }
+    .main_search-container-input{
+        width: calc(500px * 0.6);
+    }
+    .main_logo{
+        width: calc(272px * 0.6);
+        height: calc(92px * 0.6);
+    }
+    .main_buttons-container{
+        width: calc(400px * 0.8);
+    }
+    .main_buttons-container-button{
+        padding: calc(10px * 0.8) calc(15px * 0.8);
+    }
+    html{
+        font-size: calc(62.5% * 0.8);
+    }
+}
 
-
+@media(max-width:350px){
+    .main_search-container{
+        width: calc(550px * 0.4);
+    }
+    .main_search-container-input{
+        width: calc(500px * 0.4);
+    }
+    .main_logo{
+        width: calc(272px * 0.4);
+        height: calc(92px * 0.4);
+    }
+    .main_buttons-container{
+        width: calc(400px * 0.6);
+    }
+    .main_buttons-container-button{
+        padding: calc(10px * 0.6) calc(15px * 0.6);
+    }
+    html{
+        font-size: calc(62.5% * 0.6);
+    }
+}
 
 
 

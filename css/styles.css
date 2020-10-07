@@ -48,10 +48,122 @@ body{
     text-decoration: none;
     font-weight: bold;
     color: white;
-    background-color: #4178dd;
+    background-color: #4584f0;
     border: none;
-    border-radius: 3%;
+    border-radius: 3px;
 }
+
+.header_nav-login-button:hover{
+    box-shadow: 0px 1px 3px 0px rgba(222,222,222,1);
+}
+
+.header_nav-login-button:focus{
+    outline: none;
+}
+
+.header_nav-login-button:active{
+    background-color: #1866ee;
+}
+
+.main{
+    width: 100%;
+    height: 60vh;
+    margin-top: 10vh;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.main > *{
+    margin-bottom: 4vh;
+}
+
+.main_logo{
+    width: 272px;
+    height: 92px;
+}
+
+.main_logo img{
+    width: 100%;
+}
+
+.main_search-container{
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_search-container:hover{
+    box-shadow: 0px 5px 30px 0px rgba(228,228,228,1);
+    border: 1px solid white;
+}
+
+.main_search-container-magnifyingGlass{
+    color: #9aa0a6;
+    font-size: 1.6rem;
+    margin: 0 1.5vw;
+}
+
+.main_search-container-input{
+    width: 500px;
+    padding: 1.5vh 0;
+    font-size: 1.6rem;
+    border: none;
+}
+
+.main_search-container-input:focus{
+    outline: none;
+}
+
+.main_search-container-microphone{
+    color: #9aa0a6;
+    font-size: 1.6rem;
+    margin: 0 1.5vw;
+}
+
+.main_buttons-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+}
+
+.main_buttons-container-button{
+    padding: 10px 15px;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+    color: #5f6368;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+
+.main_buttons-container-button:hover{
+    border: 1px solid #a9aeb4;
+    color: black;
+}
+
+.main_buttons-container-button:focus{
+    border: 1px solid #4d90fe;
+    outline: none;
+}
+
+.main_buttons-container-button:active{
+    outline: none;
+    border: 1px solid #4d90fe;
+}
+
+.main_last-text{
+    font-size: 1.3rem;
+}
+
+
+
+
+
 
 
 
